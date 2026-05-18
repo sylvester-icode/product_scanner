@@ -1,0 +1,80 @@
+body { font-family: sans-serif; background: #f4f6f9; color: #333; margin: 2rem; }
+.dashboard-container { max-width: 900px; margin: 0 auto; background: white; padding: 2rem; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+.upload-section { margin-bottom: 2rem; padding: 1rem; background: #eef2f3; border-radius: 6px; }
+.logs-table { width: 100%; border-collapse: collapse; margin-top: 1rem; }
+.logs-table th, .logs-table td { padding: 12px; border: 1px solid #ddd; text-align: left; }
+.logs-table th { background: #1a252f; color: white; }
+.plate-badge { font-family: monospace; font-size: 1.2rem; font-weight: bold; background: #f1c40f; padding: 4px 8px; border-radius: 4px; display: inline-block; color: black;}
+
+
+.security-banner-alert {
+  background-color: #e74c3c;
+  color: white;
+  padding: 1.5rem;
+  border-radius: 6px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  animation: blinker 1.5s linear infinite;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.security-banner-alert button {
+  background: white;
+  color: #e74c3c;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+@keyframes blinker {
+  50% { opacity: 0.7; }
+}
+
+.mode-tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 10px;
+}
+.tab-btn {
+  padding: 10px 15px;
+  background: #e0e0e0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 0.95rem;
+}
+.active-tab {
+  background: #2c3e50;
+  color: white;
+}
+.submit-btn {
+  background: #34495e;
+  color: white;
+  margin-top: 10px;
+}
+
+.owner-profile-card {
+  padding: 1.2rem;
+  border-radius: 6px;
+  background: #f8f9fa;
+  border-left: 5px solid #2ecc71;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+.owner-profile-card.suspended {
+  border-left-color: #e67e22;
+  background: #fff5eb;
+}
+.owner-profile-card.unregistered {
+  border-left-color: #95a5a6;
+  background: #f2f4f4;
+}
+.owner-profile-card h3 { margin-top: 0; color: #2c3e50; }
+.status-tag { font-weight: bold; text-transform: uppercase; }
