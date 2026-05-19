@@ -9,7 +9,10 @@ import { createWorker } from 'tesseract.js';
 
 
 const app = express();
-app.use(cors({ origin: 'https://product-scanner-3.onrender.com' }));
+app.use(cors({ origin: 'https://product-scanner-3.onrender.com' , 
+    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+    credentials: true, // Allow cookies or auth headers if needed
+}));
 app.use(express.json());
 
 // Set up volatile in-memory storage buffers via Multer
