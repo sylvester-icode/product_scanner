@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import axios from 'axios';
 
-const BACKEND_API_URL = 'http://localhost:5000/api/products/scan-backend';
+const BACKEND_API_URL = 'https://product-scanner-e971.onrender.com/api/products/scan-backend';
 
 function App() {
   const videoRef = useRef(null);
